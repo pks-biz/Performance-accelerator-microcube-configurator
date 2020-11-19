@@ -1,0 +1,45 @@
+{
+    "scope": {
+        "projects": {
+            "regex": ".*",
+            "include": [],
+            "exclude": []
+        },
+        "workbooks": {
+            "regex": "",
+            "include": ['World Indicators'],
+            "exclude": []
+        },
+        "views": {
+            "regex": "",
+            "include": ['Economy'],
+            "exclude": []
+        },
+        "users": {
+            "regex": ".*",
+            "include": [],
+            "exclude": []
+        },
+        "groups": {
+            "regex": ".*",
+            "include": [],
+            "exclude": []
+        }
+    },
+    "filters": [
+        {
+            "name": "Report Date",
+            "datatype": "date",
+            "values": [
+                Report_date_from_script
+            ]
+        },
+		{
+            "name": "Project Name",
+            "datatype": "string",
+            "values": [
+                Project_name_from_script
+            ]
+        }
+    ]
+}
